@@ -15,7 +15,7 @@ From your GitHub Flavored Markdown, or **GFM** `(.md)` page ...
 
 Append your `(.md)` external link with the `{:target="_blank"}` kramdown statement, as follows:
 
-### The Code
+## The Code
 
 ```liquid
 {% raw %}
@@ -23,7 +23,7 @@ Append your `(.md)` external link with the `{:target="_blank"}` kramdown stateme
 {% endraw %}
 ```
 
-### Summation
+## Summation
 
 The components of a successful external link in markdown are, as follows:
 
@@ -31,6 +31,6 @@ The components of a successful external link in markdown are, as follows:
 - Followed by, the complete URI for the targeted destination enveloped in a single set of parenthesis characters `(...)`, and
 - Thirdly, the given kramdown statement
 
-### Live
+## Live
 
 [temporarily disable liquid tag processing](https://shopify.github.io/liquid/tags/raw/){:target="_blank"}

@@ -11,14 +11,14 @@ navigation_weight: 1
 
 Expound the solution ...
 
-### The Code
+## The Code
 
 Highlight the code ...
 
-### Summation
+## Summation
 
 Delineate the steps ...
 
-### Live
+## Live
 
 Render the code live
