@@ -1,0 +1,64 @@
+# Site settings
+#
+# github: [metadata]
+theme: "jekyll-theme-cayman"
+# repository: rwebaz/Simple-Weird-Javascript-Project
+title: "Liquid Lessons Project"
+tagline: "A GitHub repo of Liquid lessons that emphasize both the Jekyll and Shopify engines"
+description: "A GitHub repo of Liquid lessons that emphasize both the Jekyll and Shopify engines"
+author:
+    name: "Robert Weber, Director"
+    email: "mminail@icloud.com"
+    github_username: "mminail"
+    twitter_username: "mminail"
+# The 'baseurl' is the subpath of your website, e.g. /blog
+baseurl: "/Liquid-Lessons-Project"
+url: "https://rwebaz.github.io"
+exclude: ['README.md']
+markdown: "kramdown"
+highlighter: "rouge"
+kramdown:
+    input: "GFM"
+    hard_wrap: "false"
+    syntax_highlighter: "rouge"
+    math_engine: "mathjax"
+timezone: "America/Phoenix"
+google_analytics: [UA-44765001-10]
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "assets/ico"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "" 
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Robert Weber, Director"
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "default" 
+      author: "Robert Weber, Director"
+collections:
+  collection_CFFP:
+    output: "true"
+defaults:
+  - scope:
+      path: ""
+      type: "collection_CFFP"
+    values:
+      layout: "page"
+gem:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
