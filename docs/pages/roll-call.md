@@ -223,6 +223,22 @@ As follows,
 {% endraw %}
 ```
 
+## Live Rendition
+
+{% for tab in site.data.tabs.reps %}
+
+- {{ 'Arizona State Representative' }} {{ tab.lastName }}: {% case tab.vote %} {% when true %}{{'Yea'}}{% when null %}{{'Abstain'}}{% when false %}{{'Nay'}}
+
+{% else %}{{ 'There are no items to report!' }}
+
+{% endcase %}
+
+{% endfor %}
+
+{% comment %}Finito!{% endcomment %}
+
+Source: [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H)
+
 ## The Sequence of Events
 
 Still befuddled as to how to stitch the above components together in order to render a coherent display?
@@ -243,22 +259,6 @@ Well, it goes a-like this ...
 
 {% endfor %}
 ```
-
-## Live Rendition
-
-{% for tab in site.data.tabs.reps %}
-
-- {{ 'Arizona State Representative' }} {{ tab.lastName }}: {% case tab.vote %} {% when true %}{{'Yea'}}{% when null %}{{'Abstain'}}{% when false %}{{'Nay'}}
-
-{% else %}{{ 'There are no items to report!' }}
-
-{% endcase %}
-
-{% endfor %}
-
-{% comment %}Finito!{% endcomment %}
-
-Source: [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H)
 
 ## Extra Bonus
 
