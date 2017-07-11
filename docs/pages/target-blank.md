@@ -1,7 +1,7 @@
 ---
 title: Target Blank
 layout: default
-navigation_weight: 3
+navigation_weight: 4
 ---
 # Issue: Target Blank
 
