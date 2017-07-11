@@ -1,7 +1,7 @@
 ---
 title:  Liquid Lists
 layout: default
-navigation_weight: 5 
+navigation_weight: 5
 ---
 # Liquid Lists
 

@@ -484,45 +484,6 @@ Listing the various image assets of your repo require a liquid tag statement pla
 
 **Note**. Remember to place a language qualifier `yaml` after the first set of triple backticks when highlighting a multi-line block of code in a `(.md)` page.
 
-Here, the author has also placed an escape `\` character where appropriate to neutralize the rendering of the liquid statement. Please remember to remove the escape `\` characters from the liquid statement when going live.
-
-## List of Git Hub Users
-
-This little combo snippet will render a list of GitHub users associated with your repo, as follows:
-
-
-```html
-<ul>
-{\% for member in site.data.members \%}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
-      {\{ member.name }\}
-    </a>
-  </li>
-{\% endfor \%}
-</ul>
-```
-
-## Page Path
-
-{{ site.baseurl }}{{ page.path }}
-
-***
-
-## Quoting Text in Blocks ( Blockquote ) Using Git Hub Flavored Markdown
-
->When quoting text in blocks ( Blockquote ) using GitHub Flavored Markdown (.md) ...
-
->Simply place a "greater than" symbol in front of your 2nd line of text, as follows:
-
-\>As you can see, the usage of the "greater than" symbol in this case yields an indented 2nd line of text with a corresponding "thick pipe".
-
-## Indented 2nd Line of Text
-
->... indented 2nd line of text
-
-***
-
 ## More To Come
 
 As more snippets are generated or found, expect this list to grow.

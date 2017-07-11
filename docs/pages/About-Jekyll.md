@@ -1,7 +1,7 @@
 ---
 title: About Jekyll
 layout: default
-navigation_weight: 6  
+navigation_weight: 9
 ---
 # Base Jekyll Theme
 

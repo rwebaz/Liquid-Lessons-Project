@@ -1,7 +1,7 @@
 ---
 title: Footer Types
 layout: default
-navigation_weight: 7
+navigation_weight: 4
 ---
 # Footer Types
 

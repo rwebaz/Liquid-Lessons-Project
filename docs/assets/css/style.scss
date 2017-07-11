@@ -25,6 +25,11 @@
 }
 /* End Page Header From theme */
 
+/* Set the Rule for a Custom hard return tag */
+.green-groove {
+    border: 3px groove green;
+}
+
 /* Set the color of the anchor links */
 a {
     text-decoration: none;
@@ -51,11 +56,6 @@ li.active a {
     color: dodgerblue;
 }
 /* End Setting the color of the anchor links */
-
-/* Set the Rule for a Custom hard return tag */
-.green-groove {
-    border: 3px groove green;
-}
 
 /* Imgage Zoom-out From thumb */
 .icon-thumb {
@@ -113,8 +113,3 @@ nav.nav-primary li a {
     border-radius: 6px;
 }
 /* End Setting the Primary Nav*/
-
-/* Set the rule for a custom <hr /> 'hard return' tag */
-.green-groove {
-    border: 1px groove green;
-}
