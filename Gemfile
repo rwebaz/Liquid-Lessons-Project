@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby "2.4.1"
 # The Gemfile is where you manage Jekyll versioning.
-# sass "3.4.23"
+# sass "3.4.25"
 # 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version of Jekyll, make the changes below.
