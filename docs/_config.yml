@@ -11,6 +11,8 @@ author:
     email: "mminail@icloud.com"
     github_username: "mminail"
     twitter_username: "mminail"
+twitter:
+    username: "mminail"
 # The 'baseurl' is the subpath of your website, e.g. /blog
 baseurl: "/Liquid-Lessons-Project"
 url: "https://rwebaz.github.io"
@@ -34,6 +36,11 @@ defaults:
       path: "assets/ico"
     values:
       image: "true"
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/medmjorg-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-100-x-100.png
 defaults:
   - scope:
       path: "" 
@@ -60,6 +67,7 @@ defaults:
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
