@@ -1,3 +1,3 @@
 {% for tab in site.data.tabs.fruits %}
-|{{ tab.fruitNameEn }}|![{{ tab.fruitNameEs }}]({{ tab.photo }}){:class="img-responsive"}{:height="32px" width="32px"}|{{ tab.fruitNameEs }}|
+|{{ tab.fruitNameEn }}|![{{ tab.fruitNameEs }}]({{ tab.photo }} "Title: {{ tab.fruitNameEn }} - {{ tab.fruitNameEs }}" ){:class="img-responsive"}{:height="32px" width="32px"}|{{ tab.fruitNameEs }}|
 {% endfor %}
