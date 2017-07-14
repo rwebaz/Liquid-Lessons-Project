@@ -5,6 +5,11 @@ navigation_weight: 9
 ---
 # Spanish Tables
 
+## Navigating This Page ( Internal Anchor Links )
+
+- TOC
+{:toc}
+
 ## Table (Mesa) O Fruits (de Frutas)
 
 English - Fruits|Photo|Spanish - Frutas|
@@ -39,5 +44,6 @@ Raspberries|![Page Banner](../assets/img/raspberry-frambuesa-32-x-32.png)|Frambu
 |=========+=========+=========|
 |This is an optional footer row of text ...|
 |---------+---------+---------|
+{: .table}
 
 **Source**: [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}
