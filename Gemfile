@@ -39,6 +39,7 @@ gem 'jekyll-gist'
 gem 'jekyll-coffeescript'
 gem 'jekyll-paginate'
 #
+gem 'jekyll-seo-tag'
 # Note. Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #

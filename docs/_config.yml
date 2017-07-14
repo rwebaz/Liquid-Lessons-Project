@@ -57,8 +57,9 @@ defaults:
       type: "collection_LLP"
     values:
       layout: "page"
-gem:
+gems:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock

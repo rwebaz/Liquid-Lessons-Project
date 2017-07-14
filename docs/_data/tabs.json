@@ -1,7 +1,5 @@
 
-{"reps":[
-  { "lastName" : "Allen", "vote" : true },
-  { "lastName" : "Alston", "vote" : false },
-  { "lastName" : "Andrade", "vote" : null },
-  { "lastName" : "Barton", "vote" : true }
+{"fruits":[
+  { "fruitNameEn" : "Blackberries", "photo" : "../assets/img/raspberry-frambuesa-32-x-32.png", "fruitNameEs" : "Zarzamoras" },
+  { "fruitNameEn" : "Raspberries", "photo" : "../assets/img/raspberry-frambuesa-32-x-32.png", "fruitNameEs" : "Frambuesas" }
 ]}

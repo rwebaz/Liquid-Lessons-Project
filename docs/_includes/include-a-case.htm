@@ -1,0 +1,7 @@
+{% case tab.vote %} {% when true %}{{'Yea'}}{% when null %}{{'Abstain'}}{% when false %}{{'Nay'}}
+  
+  {% else %}
+  
+  {{ 'There are no items to report!' }}
+
+{% endcase %}
