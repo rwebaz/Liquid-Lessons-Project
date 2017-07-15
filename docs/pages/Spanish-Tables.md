@@ -26,6 +26,13 @@ Raspberries|![Page Banner](../assets/img/raspberry-frambuesa-32-x-32.png)|Frambu
 
 ## Table (Mesa) O Meats (de Carnes)
 
+English - Meats|Photo|Spanish - Carnes|
+---------|---------|---------|
+Blackberries|![Page Banner](../assets/img/raspberry-frambuesa-32-x-32.png)|Zarzamoras|
+Raspberries|![Page Banner](../assets/img/raspberry-frambuesa-32-x-32.png)|Frambuesas|
+
+## Table (Mesa) O Cage
+
 |---------+---------+---------|
 |English - Meats|Photo|Spanish - Carnes|
 |---------+---------+---------|
@@ -35,15 +42,18 @@ Raspberries|![Page Banner](../assets/img/raspberry-frambuesa-32-x-32.png)|Frambu
 |This is an optional footer row of text ...|
 |---------+---------+---------|
 
-## Table (Mesa) O Include Get Data
+## Table (Mesa) O Hybrid Include #1
 
-|---------+---------+---------|
-|English - Fruits|Photo|Spanish - Frutas|
-|---------+---------+---------|
+{% include include-a-table.htm %}
+
+## Table (Mesa) O Hybrid Include #2
+
 {% include get-data.htm %}
-|=========+=========+=========|
-|This is an optional footer row of text ...|
-|---------+---------+---------|
-{: .table}
+
+## Table (Mesa) O Hybrid Include #3
+
+{% include ping-back.htm %}
+
+***
 
 **Source**: [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}
