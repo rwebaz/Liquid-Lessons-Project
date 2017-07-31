@@ -1,7 +1,7 @@
 ---
 title: Roll Call
 layout: default
-navigation_weight: 7
+navigation_weight: 9
 ---
 # Issue: Roll Call
 
@@ -237,15 +237,13 @@ As follows,
 
 {% comment %}Finito!{% endcomment %}
 
-Source: [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H)
-
 ## The Sequence of Events
 
 Still befuddled as to how to stitch the above components together in order to render a coherent display?
 
 Well, it goes a-like this ...
 
-- Remember to remove the escape `\` characters from the liquid statements, if any, before going "Live" ...
+- How to programmatically perform a roll call vote i Liquid ...
 
 ```liquid
 {% raw %}
@@ -258,6 +256,8 @@ Well, it goes a-like this ...
 {% endcase %}
 
 {% endfor %}
+
+{% endraw %}
 ```
 
 ## Extra Bonus
@@ -278,3 +278,7 @@ If you do, here it is!
 {% endfor %}
 {% endraw %}
 ```
+
+***
+
+Source: [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H){:target="_blank"}
