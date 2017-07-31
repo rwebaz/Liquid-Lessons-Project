@@ -1,7 +1,7 @@
 ---
 title: Page Path
 layout: default
-navigation_weight: 6
+navigation_weight: 9
 ---
 # Page Path
 
