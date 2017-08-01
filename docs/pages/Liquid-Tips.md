@@ -1,5 +1,5 @@
 ---
-title: Markdown Tips
+title: Liquid Tips
 layout: default
 navigation_weight: 9
 ---
@@ -453,10 +453,6 @@ As above in the *Reference Style Hyperlink* section, the citation actually sits 
 https://mminail.github.io/images/png/dot-epub-button-62-x-20.png
 "The Official Logo Badge of ePub"
 
-## Blockquote
-
-A blockquote may be started with a single right angle bracket `>`, or greater than `&gt;` symbol &gt; :
-
 >This is a blockquote with an Reference-style image below:
 
 ![CFFP Logo Banner][3]
@@ -500,16 +496,19 @@ Listing the various image assets of your repo require a liquid tag statement pla
 
 **Note**. Remember to place a language qualifier `liquid` after the first set of triple backticks when highlighting a multi-line block of code in a `(.md)` page.
 
-***
+## Blockquote
 
-## Block Text
+The usage of the "greater than" symbol `>` at the beginning of a line of text yields an indented line of text with a corresponding "thick pipe" preceding, as follows:
 
 ```liquid
 {% raw %}
-First Line of Text
->As you can see in the following live rendition, the usage of the "greater than" symbol `>` in this case yields an indented 2nd line of text with a corresponding "thick pipe" drawn preceding Line Number Two.
+>"Tis better to give, than receive!"~ Sinter Klausen
 {% endraw %}
 ```
+
+### Live Rendition
+
+>A blockquote may be started with a single right angle bracket `>`, or greater than `&gt;` symbol.
 
 ## More To Come
 
