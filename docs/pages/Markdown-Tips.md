@@ -502,14 +502,19 @@ Listing the various image assets of your repo require a liquid tag statement pla
 
 ***
 
-## Block Text
+## Block Quote
+
+The usage of the "greater than" symbol `>` in the first line of text of a block quote renders a corresponding preceding "thick pipe" drawn, as follows:
 
 ```liquid
 {% raw %}
-First Line of Text
->As you can see in the following live rendition, the usage of the "greater than" symbol `>` in this case yields an indented 2nd line of text with a corresponding "thick pipe" drawn preceding Line Number Two.
+>"Tis better to give, than receive!"~ Sinter Klausen
 {% endraw %}
 ```
+
+### Live Rendition
+
+>"Tis better to give, than receive!"~ Sinter Klausen
 
 ## More To Come
 
