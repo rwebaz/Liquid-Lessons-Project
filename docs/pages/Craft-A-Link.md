@@ -184,7 +184,9 @@ Putting it all together yields the following **Live** rendition ...
 
 ## The Flammarion
 
-The **Flammarion** is an ancient portrait of a medieval man poking his head into the ether beyond the then given celestial sphere upon which all planets traversed guided and pulled by Apollo's all powerful Sun Chariot.
+The **Flammarion** is an ancient portrait of a medieval man poking his head into the ether beyond the then given celestial sphere upon which all planets traversed.
+
+Guided and pulled by Apollo's all powerful Sun Chariot, the engraving could have been mastered by its 19h century expounder of science French astronomer Camille Flammarion, but more than likely was created by an unknown designer from the 16th century.
 
 Christopher Columbus knew of the value of understanding "the sphere" and put his knowledge of celestial beings to work when unfortunately on his last voyage to the New World he found he and his crew marooned after battling a late season hurricane.
 
