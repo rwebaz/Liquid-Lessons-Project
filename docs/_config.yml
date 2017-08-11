@@ -33,7 +33,7 @@ defaults:
       image: "true"
 defaults:
   - scope:
-      path: "assets/ico"
+      path: "assets/img"
     values:
       image: "true"
 defaults:
