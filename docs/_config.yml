@@ -28,7 +28,7 @@ timezone: "America/Phoenix"
 google_analytics: [UA-44765001-10]
 defaults:
   - scope:
-      path: "assets/img"
+      path: "assets/ico"
     values:
       image: "true"
 defaults:
