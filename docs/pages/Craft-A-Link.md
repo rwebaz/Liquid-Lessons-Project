@@ -5,24 +5,17 @@ navigation_weight: 9
 ---
 # Craft A Link
 
-## How To Craft A Hyperlink In Markdown With Liquid
+## How To Craft An External Hyperlink In Markdown With Liquid
 
 Placing strategic **Liquid** statements enveloped with {% raw %}{{ double sets of curly braces }}{% endraw %} will offer a shortcut to the more common long form way of expressing **Markdown** external hyperlinks.
 
-## Table O Contents
-
-![MMI™ Flammarion Logo Badge](../assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-725-x-725.svg){:height="120px" width="120px"}
-
-**Note**. The above **Live** rendition of the **MMI™ Flammarion Logo Badge** `( .svg )` image file is set to the dimensions of 120.00px x 120.00px.
-
-- TOC
-{:toc}
+{% include toc.htm %}
 
 ## Long Cut Links
 
-### The Code
+In **Markdown**, a *long-cut* external hyperlink is crafted with a train of connected statements consisting of first the bracketed clickable text, as follows:
 
-In **Markdown**, a *long cut* external hyperlink consists of first the bracketed clickable text, as follows:
+### The Code
 
 ```markdown
 {% raw %}
@@ -30,7 +23,7 @@ In **Markdown**, a *long cut* external hyperlink consists of first the bracketed
 {% endraw %}
 ```
 
-After establishing the bracketed clickable text, next the developer appends the full *long cut* external Url in a set of single parenthesis, as shown below:
+After establishing the bracketed clickable text, next the developer appends the full *long-cut* external Url within a set of single parenthesis `(...)`, as shown below:
 
 ```markdown
 {% raw %}
@@ -38,13 +31,15 @@ After establishing the bracketed clickable text, next the developer appends the 
 {% endraw %}
 ```
 
-**Note**. A full *long cut* external Url in **Markdown** is written the same way as an absolute Url in **Html**.
+**Note**. A full *long-cut* external Url in **Markdown** is written the same way as an absolute Url in **Html**.
 
-Finally, a **Liquid** statement may be appended to the tail end of the **Markdown** hyperlink chain in order to designate a target of blank.
+### Finale Liquid
+
+Finally, a **Liquid** statement may be appended to the tail end of the **Markdown** hyperlink chain in order to designate a target of self or blank.
 
 ```markdown
 {% raw %}
-[Liquid Lessons Project: Ping-back Home Page](https://rwebaz.github.io/Liquid-Lessons-Project/){:target="_blank"}
+[Liquid Lessons Project](https://rwebaz.github.io/Liquid-Lessons-Project/){:target="_blank"}
 {% endraw %}
 ```
 
@@ -52,37 +47,58 @@ Finally, a **Liquid** statement may be appended to the tail end of the **Markdow
 
 Putting it all together yields the following **Live** rendition ...
 
-1. [Liquid Lessons Project](https://rwebaz.github.io/Liquid-Lessons-Project/){:target="_blank"}
+- [Liquid Lessons Project](https://rwebaz.github.io/Liquid-Lessons-Project/){:target="_blank"}
 
-## Short Cut Links ( Relative )
+## Short Cut Links
 
-**Liquid** *short cut* external hyperlinks replace some of the more static elements of a **Markdown** *long cut* hyperlink with *moustache* statements.
+**Liquid** *short-cut* external hyperlinks can replace some of the more static elements of a **Markdown** *long-cut* hyperlink with *moustache* statements.
 
-A **Liquid** *moustache* is simply another way to say {% raw %}{{ double sets of curly braces }}{% endraw %} with the double sets of curly braces resembling a sort of caricature moustache, don't you see.
+**Note**. A **Liquid** *moustache* is simply another way to say {% raw %}{{ double sets of curly braces }}{% endraw %} with the double sets of curly braces resembling a sort of caricature moustache, don't you see.
 
-### Break It Down
+### Break It Down Relatively
 
-An analysis of a **Markdown** *long cut* hyperlink consists of the following primary elements:
+An analysis of a **Markdown** *long-cut* hyperlink consists of the following primary elements:
 
 1. **Link Title**
-
+- The Title of The Destination
 1. **Link Url Full**
-
+- The Full Url
 1. **Target Statement**
+- The Landing Page ( Self or Blank )
 
-**Note**. The full Url of a hyperlink may be dissected further to reveal the following sub-elements eligible for consideration as static **Liquid** variables:
+### Dissect Further
+
+The full Url of a hyperlink may be dissected further to reveal the following sub-elements eligible for consideration as static **Liquid** variables:
+
+#### baseurl
 
 1. **Base Url**
-
+- The Directory From Which The Files Are Served
 1. **Url**
+- The Parental Web Address of Your Designated Project
 
-Both the **Base Url** and **Url** may be set in stone as **Liquid** variables via the **Config dot yaml** file stored in the docs folder of your repo.
+**Note**. Both the **Base Url** and **Url** may be set in stone as **Liquid** variables via the **Config dot yaml** file.
 
-### baseurl
+The `config.yml` file is stored in the docs folder of your repo.
 
-The **baseurl** is a static variable set inside your `config.yml` file.
+### Base Url Example #1
 
-This variable can then be placed within your *long* hyperlink locked inside a **Liquid** moustache statement to avoid the repetition of always having to type the same **baseurl** all the time, as follows:
+The **Base Url** represents a static variable named `baseurl` that can be set inside your `config.yml` file representing the subpath of your designated project, e.g. /blog, as follows:
+
+```liquid
+{% raw %}
+# The 'baseurl' is the subpath of your designated project
+baseurl: "/Liquid-Lessons-Project"
+{% endraw %}
+```
+
+The `baseurl` may then be placed within the *long-cut* hyperlink if locked inside a **Liquid** moustache statement.
+
+An application of this code avoids the repetition of always having to type the same repo subpath when crafting an external hyperlink.
+
+#### Unix Pipe
+
+Let's establish a **Liquid** moustache statement that uses a **Unix** pipe to send the value of your designated path to the built-in site method `relative_url`, also known as a *filter*.
 
 ```liquid
 {% raw %}
@@ -90,63 +106,100 @@ This variable can then be placed within your *long* hyperlink locked inside a **
 {% endraw %}
 ```
 
-Here, we have established a **Liquid** moustache statement that uses a **Unix** pipe to send the value of your designated path to the built-in site method `relative_url`, a *filter*.
-
-The built-in site method `relative_url` then instructs your development machine to fetch the value of the variable **baseurl** and in effect prepend the **baseurl** to your path entry.
+The built-in site method `relative_url` instructs your development machine to fetch the value of the variable **baseurl** from the **Config dot yaml** file and then prepend the **baseurl** variable to your path entry as shown above in order to create a valid relative link programmatically.
 
 A little backwards, heh?
 
 But, it works!
 
-**Note**. The **baseurl** path `"/"` shown above is the directory from which your index page will be served.
-
-In this case, we are serving our files via Git Hub Pages using the docs directory.
-
-The docs directory, therefore, is the root directory for our index file as well as for our pages subdirectory.
-
-### Finale Relative
-
-Taking the code of our already completed *long cut* external hyperlink from the beginning of this tutorial above ( See: [Long Cut Links]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"} ), we may now inject our **Liquid** moustache statement into the mix, as follows:
-
-#### The Code: Short Cut ( Relative )
+In effect, we have crafted programmatically the following **long-cut** Url:
 
 ```liquid
 {% raw %}
-[Liquid Lessons Project]({{ "/pages/Source-Links" | relative_url }}){:target="_blank"}
+[Liquid Lessons Project](../Liquid-Lessons-Project/){:target="_blank"}
 {% endraw %}
 ```
 
-#### Live Link: Short Cut ( Relative )
+From the following **short-cut** Url statement ...
+
+#### The Code: Short Cut ( Relative ) #1
+
+```liquid
+{% raw %}
+[Liquid Lessons Project](../{{ "/" | relative_url }}){:target="_blank"}
+{% endraw %}
+```
+
+**Note**. By setting the path with simply the slash key `"/"` we have invoked the index page of the project.
+
+The path `"/"` shown above is the directory from which your 'index dot md' page will be served, as well as the md files located in the `docs` subdirectory named `pages`.
+
+In this case, we are serving our files via **Git Hub Pages** using the `docs` directory.
+
+The `docs` directory, therefore, becomes the root directory `"/"` for our 'index dot md' file as well as for our 'pages' subdirectory.
+
+Prepending the **baseurl** onto the `"/"` produces, in **long-cut**, the following relative Url statement ...
+
+#### The Code: Long Cut ( Relative ) #1
+
+```liquid
+{% raw %}
+[Liquid Lessons Project](../Liquid-Lessons-Project/){:target="_blank"}
+{% endraw %}
+```
+
+Where, the 'Liquid-Lessons-Project' is the variable **baseurl**.
+
+### Base Url Example #2
+
+Here, we are prepending via the **Unix Pipe** the **baseurl** variable from our `config.yml` file onto the pathway shown to create a relative link, as follows:
+
+#### The Code: Long Cut ( Relative ) #2
+
+```liquid
+{% raw %}
+[Liquid Lessons Project](../Liquid-Lessons-Project/pages/Source-Links){:target="_blank"}
+{% endraw %}
+```
+
+**Note**. It is not required to place a suffix after the title of the targeted page in this relative instance.
+
+**Markdown** will infer the type of page from the code inside and **Kramdown** the file into a standard **Html** file with a ( .html ) suffix.
+
+#### From Afar
+
+However, when crafting an external absolute hyperlink from an external html source page ...
+
+When you do target a file that has been **Kramdown**, be sure to reference the standard ( .html ) suffix.
+
+#### Live Link: Short Cut ( Relative ) #2
 
 Putting it all together yields the following **Live** rendition ...
 
-[Liquid Lessons Project]({{ "/pages/Source-Links" | relative_url }}){:target="_blank"}
+- [Liquid Lessons Project]({{ "/pages/Source-Links" | relative_url }}){:target="_blank"}
 
-## Changing The Switch
+### Flipping The Switch
 
-If we now substitute the `relative_url` method with the built-in `absolute_url` site method, or *filter*, then the program will instruct your development machine to fetch the value of both the variable **baseurl** ( as in the `relative_url` method shown above ) plus the variable **url**, as well.
+If we now substitute the `relative_url` method with the built-in `absolute_url` site method, or *filter*, then the program will instruct your development machine to fetch the value of BOTH the variable **baseurl** ( as in the `relative_url` method shown above ) plus the variable **url**, as well.
 
 Let's try that ...
 
-### url
+#### url
 
 Recall from above, the full Url of a hyperlink may be dissected further to reveal the following sub-elements eligible for consideration as static **Liquid** statements:
 
 1. **Base Url**
-
+- The Directory From Which The Files Are Served
 1. **Url**
+- The Parental Web Address of Your Designated Project
 
-Recall further, that both the **Base Url** and **Url** may be set in stone as **Liquid** variables via the **Config dot yaml** file stored in the docs folder of your repo.
+Recall further, that BOTH the **Base Url** and the **Url** may be set in stone as **Liquid** variables via the **Config dot yaml** file stored in the `docs` folder of your repo.
 
-## Short Cut Links ( Absolute )
+### Absolute Short Cut Links
 
-The **url** is a static variable set inside your `config.yml` file.
+The **url** is a static variable set inside your `config.yml` file representing the parental web address of your designated project.
 
-This variable can then be placed within your *long* hyperlink locked inside a **Liquid** moustache statement to avoid the repetition of always having to type the same **url** all the time.
-
-### Finale Absolute
-
-Live, this should simply recreate the *long cut* external hyperlink from the beginning of this tutorial above ( See: [Long Cut Links]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"} ).
+This variable can be placed within the code statement of your *short-cut* hyperlink locked inside a **Liquid** moustache statement to avoid the repetition of always having to type the same **url**, or parental web address of your designated project ... all the time, as follows:
 
 #### The Code: Short Cut ( Absolute )
 
@@ -156,7 +209,7 @@ Live, this should simply recreate the *long cut* external hyperlink from the beg
 {% endraw %}
 ```
 
-#### Live Link Short Cut ( Absolute )
+#### Live Link: Short Cut ( Absolute )
 
 Putting it all together yields the following **Live** rendition ...
 
@@ -164,29 +217,21 @@ Putting it all together yields the following **Live** rendition ...
 
 **Note**. When the "absolute" version of the filter is used, the method instructs your machine to prepend first the value of the **url** variable, then the variable of the **baseurl** to your designated path.
 
-## Anchors ( Relative )
+Locally, when rendering the page over your local Jekyll server, **localhost** is substituted for BOTH of the variables.
 
-If you wish to target a certain heading or sub-heading within a page at landing time, simply append the designated pathway with a sharp symbol `#` followed by the **Location ID** of the selected heading or sub-heading, as follows:
+However, when rendering the page over the remote Jekyll server at the Git Hub Pages server farm, we have transformed the code from the above **short-cut** link to the following code more conducive to the rendering of a **long-cut** link, as follows:
 
-### Finale Anchor
+[Liquid Lessons Project](https://rwebaz.github.io/Liquid-Lessons-Project/index){:target="_blank"}
 
-#### The Code: Short Cut ( Relative ) Anchor
+Where, 'rwebaz.github.io' is the parental web address of your designated project, or **url** variable and **baseurl** is the subpath of your designated project, in this case '/Liquid-Lessons-Project`.
 
-```liquid
-{% raw %}
-[Liquid Lessons Project]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"}
-{% endraw %}
-```
+Another way to put it is ...
 
-#### Live Link: Short Cut ( Relative ) Anchor
-
-Putting it all together yields the following **Live** rendition ...
-
-[Liquid Lessons Project]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"}
+Your designated `path` ( in this case "/index" ) is prepended by the **url** variable appended by the **baseurl** variable!
 
 ## Execution
 
-If we hover over each live rendition shown above, we should see at the bottom of your browser ( if your status bar is enabled ) the pathways of both the above "long" and the "short" Urls as compiled.
+If we hover over each live rendition shown above, we should see at the bottom of your browser ( if your status bar is enabled ) the pathways of both the **long-cut** and **short-cut** Urls as compiled.
 
 ### Hover Over
 
@@ -196,67 +241,9 @@ Simply hover over each of the above "long" and the "short" links, and then spy t
 
 The **Status Bar** will show each link as compiled, when hovered over.
 
-## Bonus: Flammarion SVG
+{% include flammarion-text.htm %}
 
-The **Flammarion** is an ancient portrait of a medieval man poking his head into the ether beyond the then given celestial sphere upon which all planets traversed guided and pulled by Apollo's all powerful Sun Chariot.
-
-The engraving could have been mastered by the 19h century expounder of science, French astronomer Camille Flammarion.
-
-But, more than likely was created by an unknown designer from the 16th century.
-
-Christopher Columbus knew of the value of understanding "the sphere" and put his knowledge of celestial beings to work when unfortunately on his last voyage to the New World he found himself and his crew marooned after battling a late season hurricane.
-
-The ancient Meso-Americans considered an eclipse to be a "bad omen" such that Columbus while shipwrecked used his knowledge of the occurrences of solar eclipses to extract concessions from the natives.
-
-**Note**. The last full eclipse of the sun across America occurred in the year #1979 prior to the ascent of Ronald Reagan's conservative movement and administration.
-
-"If you don't give me and my crew some food, I will cause the sun to stop shining!"~ Christopher Columbus, circa 1500
-
-As if by a miracle, the eclipse came at the exact time Columbus ( and, his star charts ) said it would!
-
-Quite a display of astronomical prowess, heh?
-
-The natives were quite impressed by this feat, and scared, too!
-
-As a result, Columbus and his crew were able to stave off starvation, rebuild their ships, and continue on to the Isthmus of Panama.
-
-### How To Render SVG In Markup
-
-From the tagline of the **[Inline Images][1]** article at our **[Markdown Lessons Project][2]** ...
-
-**Inline Images** may be displayed in **Markdown** using the exclamation point `!` followed by a bracketed `[Alt Text]` followed by a relative `URL` enclosed in a single set of parenthesis `(...)`.
-
-That includes SVG images, as follows:
-
-#### The Code: SVG In Markup
-
-```liquid
-{% raw %}
-![MMI™ Flammarion Logo Badge](../assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-725-x-725.svg){:height="500px" width="500px"}
-{% endraw %}
-```
-
-Here, we are using an original `( .xcf )` file that has been exported from **GIMP** as a `( .psd )` of dimensions 725px x 725px x 96dpi and then imported via **Adobe Illustrator**, or **AI**.
-
-Once inside **AI**, the `( .psd )` file is then "save as" an `( .svg )`.
-
-Out comes an `( .svg )` file of dimensions 543.75px x 543.75px.
-
-Now, an **SVG** file is both expandable and responsive.
-
-To render a smaller version of the `( .svg )`, simply append an appropriate height and width, as follows:
-
-```liquid
-{% raw %}
-{:height="120px" width="120px"}
-{% endraw %}
-```
-
-#### Live Image: SVG In Markup
-
-The following **Live** rendition of the **MMI™ Flammarion Logo Badge** `( .svg )` image file is set to the dimensions of 500.00px x 500.00px.
-
-![MMI™ Flammarion Logo Badge](../assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-725-x-725.svg){:height="500px" width="500px"}
+{% include flammarion-svg.htm %}
 
 ## Sources and Uses
 
@@ -280,4 +267,4 @@ Therefore, it is the policy of the **[MMINAIL][3]** to always provide a **Ping B
 
 - [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}. Published by © 2017 [Cloudcannon.com](https://www.cloudcannon.com){:target="_blank"}.
 
-- [How To Convert an Html Site To Jekyll](http://jekyllrb.com/tutorials/convert-site-to-jekyll/). Published by © 2017 [Jekyllrb.com](http://jekyllrb.com){:target="_blank"}.
+- [How To Convert an Html Site To Jekyll](https://jekyllrb.com/tutorials/convert-site-to-jekyll/). Published by © 2017 [Jekyllrb.com](https://jekyllrb.com){:target="_blank"}.

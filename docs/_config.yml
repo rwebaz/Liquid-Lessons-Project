@@ -13,8 +13,9 @@ author:
     twitter_username: "mminail"
 twitter:
     username: "mminail"
-# The 'baseurl' is the subpath of your website, e.g. /blog
+# The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project
 baseurl: "/Liquid-Lessons-Project"
+# The 'url' is the parental web address of your designated project, e.g. /https://rwebaz.github.io
 url: "https://rwebaz.github.io"
 exclude: ['README.md']
 markdown: "kramdown"

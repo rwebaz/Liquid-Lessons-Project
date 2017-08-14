@@ -1,31 +1,66 @@
 ---
-title: Home Page
+title: Relative Anchors
 layout: default
-navigation_weight: 1
+navigation_weight: 9
 ---
-# Issue: Lesson Template
+# Relative Anchors
 
-{{ site.tagline }}
+## How To Craft An Internal Hyperlink In Markdown With Liquid
 
-## State the issue of the problem in the form of a question
+## Table O Contents
 
-How do you code this stuff?
+![MMI™ Flammarion Logo Badge](../assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-725-x-725.svg){:height="120px" width="120px"}
 
-## Solution
+**Note**. The above **Live** rendition of the **MMI™ Flammarion Logo Badge** `( .svg )` image file is set to the dimensions of 120.00px x 120.00px.
 
-Expound the solution ...
+- TOC
+{:toc}
 
-## The Code
+## Targeting SubTitles
 
-Highlight the code ...
+If you wish to target a certain heading or sub-heading within a page at landing time, simply append the designated pathway with a sharp symbol `#` followed by the **Location ID** of the selected heading or sub-heading, as follows:
 
-## Summation
+### Finale Anchor
 
-Delineate the steps ...
+#### The Code: Short Cut ( Relative ) Anchor
 
-## Live
+```liquid
+{% raw %}
+[Liquid Lessons Project]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"}
+{% endraw %}
+```
 
-Render the code live ...
+#### Live Link: Short Cut ( Relative ) Anchor
+
+Putting it all together yields the following **Live** rendition ...
+
+[Liquid Lessons Project]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"}
+
+## Subtitle
+
+Place the introducing line of text ie.) the 'tagline' here ...
+
+### Another Example
+
+Taking the code of our already completed *long-cut* external hyperlink from the beginning of this tutorial ...
+
+See: [Long Cut Links]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"} ), we may now inject our **Liquid** moustache statement into the mix, as follows:
+
+## Raw Code
+
+Place the introducing line of text ie.) the 'tagline' here ...
+
+```liquid
+{% raw %}
+`...`
+{% endraw %}
+```
+
+## The Flammarion
+
+{% include flammarion-text.htm %}
+
+![MMI™ Flammarion Logo Badge](../assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-725-x-725.svg){:height="500px" width="500px"}
 
 ## Sources and Uses
 
@@ -47,10 +82,6 @@ Therefore, it is the policy of the **[MMINAIL][3]** to always provide a **Ping B
 
 ### External Sources
 
-- [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:title="Click to Visit Cloud Cannon"}{:target="_blank"}. Published by © 2017 [Cloudcannon.com](https://www.cloudcannon.com){:title="Click to Visit Cloud Cannon"}{:target="_blank"}.
+- [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}. Published by © 2017 [Cloudcannon.com](https://www.cloudcannon.com){:target="_blank"}.
 
-- [How To Convert an Html Site To Jekyll](http://jekyllrb.com/tutorials/convert-site-to-jekyll/){:title="Click to Visit Jekyll RB"}{:target="_blank"}. Published by © 2017 [Jekyllrb.com](http://jekyllrb.com){:title="Click to Visit Jekyll RB"}{:target="_blank"}.
-
-- [Liquid Lessons Project Source Links](https://rwebaz.github.io/Liquid-Lessons-Project/pages/Source-Links.html){:title="Click to Visit the Source Links Page of the Liquid Lessons Project"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io){:title="Click to Visit the current Home Page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
-
-- [Next Link]
+- [How To Convert an Html Site To Jekyll](http://jekyllrb.com/tutorials/convert-site-to-jekyll/). Published by © 2017 [Jekyllrb.com](http://jekyllrb.com){:target="_blank"}.
