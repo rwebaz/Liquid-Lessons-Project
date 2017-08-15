@@ -1,18 +1,20 @@
 # Site settings
 #
+# Date of this Update to Config-template file ver 08-13-2017 PM
+#
 # github: [metadata]
 theme: "jekyll-theme-cayman"
 # repository: rwebaz/Liquid-Lessons-Project
-title: "Liquid Lessons Project"
+title: "Liquid Lessons Project | MMINAIL"
 tagline: "A GitHub repo of Liquid lessons that emphasize both the Jekyll and Shopify engines"
 description: "A GitHub repo of Liquid lessons that emphasize both the Jekyll and Shopify engines"
+twitter:
+    username: "mminail"
 author:
     name: "Robert Weber, Director"
     email: "mminail@icloud.com"
-    github_username: "mminail"
-    twitter_username: "mminail"
-twitter:
-    username: "mminail"
+    github_username: "rwebaz"
+    twitter_username: "rwebaz"
 # The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project
 baseurl: "/Liquid-Lessons-Project"
 # The 'url' is the parental web address of your designated project, e.g. /https://rwebaz.github.io
@@ -29,12 +31,12 @@ timezone: "America/Phoenix"
 google_analytics: [UA-44765001-10]
 defaults:
   - scope:
-      path: "assets/ico"
+      path: "assets/img"
     values:
       image: "true"
 defaults:
   - scope:
-      path: "assets/img"
+      path: "assets/ico"
     values:
       image: "true"
 defaults:
@@ -65,7 +67,7 @@ defaults:
       type: "collection_LLP"
     values:
       layout: "page"
-gems:
+plugins_dir:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap

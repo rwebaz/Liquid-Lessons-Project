@@ -215,19 +215,41 @@ Putting it all together yields the following **Live** rendition ...
 
 [Liquid Lessons Project]({{ "/index" | absolute_url }}){:target="_blank"}
 
-**Note**. When the "absolute" version of the filter is used, the method instructs your machine to prepend first the value of the **url** variable, then the variable of the **baseurl** to your designated path.
+**Note**. When the "absolute" version of the filter is used, the method instructs your machine to prepend first the value of the **baseurl** variable to your designated path.
 
-Locally, when rendering the page over your local Jekyll server, **localhost** is substituted for BOTH of the variables.
+And, then secondly ... to prepend the variable of the **url** ... to the **baseurl**.
 
-However, when rendering the page over the remote Jekyll server at the Git Hub Pages server farm, we have transformed the code from the above **short-cut** link to the following code more conducive to the rendering of a **long-cut** link, as follows:
+#### Local Jekyll Server
+
+Locally, when rendering the page over your local Jekyll server, **localhost** is substituted for the **url** and the **baseurl**.
+
+#### Remote Jekyll Server
+
+However, when rendering the page over the remote Jekyll server at the **Git Hub Pages** server farm ...
+
+The **short-cut** link results in the rendering of a **long-cut** link, as follows:
+
+##### The Code: Remote Jekyll Server
+
+```liquid
+{% raw %}
+[Liquid Lessons Project](https://rwebaz.github.io/Liquid-Lessons-Project/index){:target="_blank"}
+{% endraw %}
+```
+
+##### Live Link: Remote Jekyll Server
 
 [Liquid Lessons Project](https://rwebaz.github.io/Liquid-Lessons-Project/index){:target="_blank"}
 
-Where, 'rwebaz.github.io' is the parental web address of your designated project, or **url** variable and **baseurl** is the subpath of your designated project, in this case '/Liquid-Lessons-Project`.
+Where, 'rwebaz.github.io' is the parental web address of your designated project, or **url** variable.
+
+And, '/Liquid-Lessons-Project` is the subpath of your designated project, or **baseurl** variable.
 
 Another way to put it is ...
 
-Your designated `path` ( in this case "/index" ) is prepended by the **url** variable appended by the **baseurl** variable!
+Your designated `path` ( in this case "/index" ) is prepended by the **url** variable ...
+
+That is itself appended by the **baseurl** variable!
 
 ## Execution
 
