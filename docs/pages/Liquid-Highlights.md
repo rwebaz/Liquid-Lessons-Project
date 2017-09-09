@@ -7,10 +7,7 @@ navigation_weight: 9
 
 **Jekyll** offers powerful support for code snippets via the **Liquid** language.
 
-## Table O Contents
-
-- TOC
-{:toc}
+{% include toc-flammarion.md %}
 
 ## Highlight Code
 
@@ -28,16 +25,8 @@ print_hi('Tom')
 {% endraw %}
 ```
 
-## Raw Code
+{% include sources-and-uses.md %}
 
-More to come ...
+### External Sources
 
-```liquid
-{% raw %}
-`...`
-{% endraw %}
-```
-
-***
-
-**Source**: [Project Source Links](https://rwebaz.github.io/Zazzle-Hempaz-Project/pages/Source-Links.html){:target="_self"). Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.

@@ -7,9 +7,7 @@ navigation_weight: 9
 
 GFM is an acronym for Git Hub Flavor'd Markdown
 
-**Rule**. All markdown pages carry the suffix (.md)
-
-***
+{% include toc-flammarion.md %}
 
 ## Creating Headers
 
@@ -17,15 +15,11 @@ GFM is an acronym for Git Hub Flavor'd Markdown
 
 >Simply place one `#` = `<h1>`, two `##` = `<h2>`, or three `###` = `<h3>` sharp symbols in front of the text you wish to emphasize.
 
-***
-
 ## Emphasizing Text
 
 >When **emphasizing** text using GitHub Flavored Markdown (.md) ...
 
 >Simply place two (**) asterisk symbols in front of, and in back of the text you wish to **emphasize**.
-
-***
 
 ## Liquid Link Tags
 
@@ -69,7 +63,7 @@ Next, the `link` tag is built within a separate liquid statement adjacent to and
 
 ```liquid
 {% raw %}
-{% link pages/Markdown-Target-Blank.md %}
+{% link pages/Title-Target.md %}
 {% endraw %}
 ```
 
@@ -83,13 +77,13 @@ Putting the two liquid statements together "live" we have the following "live" r
 
 ```liquid
 {% raw %}
-[Target Blank]{{ site.baseurl }}{% link pages/Markdown-Target-Blank.md %}
+[Target Blank]{{ site.baseurl }}{% link pages/Title-Target.md %}
 {% endraw %}
 ```
 
 ### Live E
 
-[Target Blank]{{ site.baseurl }}{% link pages/Markdown-Target-Blank.md %}
+[Target Blank]{{ site.baseurl }}{% link pages/Title-Target.md %}
 
 ***
 
@@ -197,8 +191,6 @@ But, can now become manifest, as next illustrated ...
 {% endraw %}
 ```
 
-***
-
 ## Enabling Hyperlinks
 
 >When enabling hyperlinks using GitHub Flavored Markdown (.md) ...
@@ -263,8 +255,6 @@ Finally, to enable the fetching and rendering of your subject image, place an ex
 {% endraw %}
 ```
 
-***
-
 ## Stand Alone URLs
 
 When enabling **Stand Alone URLs** using GitHub Flavored Markdown (.md) ...
@@ -274,8 +264,6 @@ Simply type the URL as a Stand Alone URL, as follows:
 C=> https://medmj.us/SolarPowerYes
 
 The Git Hub Markdown interpreter will automatically recognize a properly typed URL.
-
-***
 
 ## Anchor Links w Site Base URL Using the Optional liquid link tag
 
@@ -295,7 +283,7 @@ Inside the single set of parenthesis `(...)` is a double set of braces ie.) a *m
 {% endraw %}
 ```
 
-In this case ... the site base URL `site.baseurl` followed by another liquid `{\%...\%}` statement that houses the liquid `link` keyword plus a `space` followed by the relative `page` URL of the targeted page `pages/Markdown-Target-Blank.md`.
+In this case ... the site base URL `site.baseurl` followed by another liquid `{\%...\%}` statement that houses the liquid `link` keyword plus a `space` followed by the relative `page` URL of the targeted page `pages/Title-Target.md`.
 
 Using a Triple-backtick highlighted code block with a language qualifier of liquid to illustrate ... all together now!
 
@@ -303,13 +291,13 @@ Using a Triple-backtick highlighted code block with a language qualifier of liqu
 
 ```liquid
 {% raw %}
-[Target Blank]({{ site.baseurl }}{% link pages/Markdown-Target-Blank.md %})
+[Target Blank]({{ site.baseurl }}{% link pages/Title-Target.md %})
 {% endraw %}
 ```
 
 ### Live Q
 
-**Por ejemplo en vivo**. [Target Blank]({{ site.baseurl }}{% link pages/Markdown-Target-Blank.md %})
+**Por ejemplo en vivo**. [Target Blank]({{ site.baseurl }}{% link pages/Title-Target.md %})
 
 ***
 
@@ -514,6 +502,10 @@ The usage of the "greater than" symbol `>` at the beginning of a line of text yi
 
 As more snippets are generated or found, expect this list to grow.
 
-***
+**Rule**. All markdown pages carry the suffix (.md)
 
-**Source**: [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}
+{% include sources-and-uses.md %}
+
+### External Sources
+
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.

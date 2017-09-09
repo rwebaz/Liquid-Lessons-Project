@@ -48,7 +48,7 @@ Highlight the code ...
 
 ```liquid
 {% raw %}
-[Medcoin™ Crypto Currency Project: Ping-back Home Page](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:target="_blank"}
+[Medcoin™ Crypto Currency Project: Ping-back Home Page](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit  ..."}{:target="_blank"}
 {% endraw %}
 ```
 
