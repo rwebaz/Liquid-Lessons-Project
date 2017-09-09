@@ -7,23 +7,14 @@ navigation_weight: 9
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
-## Table O Contents
-
-- TOC
-{:toc}
+{% include toc-flammarion.md %}
 
 ## Subtitle
 
 More to come ...
 
-## Raw Code
+{% include sources-and-uses.md %}
 
-```liquid
-{% raw %}
-`...`
-{% endraw %}
-```
+### External Sources
 
-***
-
-**Source**: [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}. Published by © 2017 [Cloudcannon.com](https://www.cloudcannon.com){:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.

@@ -3,9 +3,11 @@ title: Roll Call
 layout: default
 navigation_weight: 9
 ---
-# Issue: Roll Call
+# Roll Call
 
-## How to Render Data From a Data Store In Jekyll
+How to Render Data From a Data Store In Jekyll
+
+{% include toc-flammarion.md %}
 
 ## Solution
 
@@ -279,6 +281,10 @@ If you do, here it is!
 {% endraw %}
 ```
 
-***
+{% include sources-and-uses.md %}
 
-Source: [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H){:target="_blank"}
+### External Sources
+
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+
+- [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H){:title="Click to Visit ..."}{:target="_blank"}

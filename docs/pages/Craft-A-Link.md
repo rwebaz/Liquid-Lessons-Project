@@ -265,10 +265,6 @@ Simply hover over each of the above "long" and the "short" links, and then spy t
 
 The **Status Bar** will show each link as compiled, when hovered over.
 
-{% include flammarion-text.htm %}
-
-{% include flammarion-svg.htm %}
-
 {% include sources-and-uses.md %}
 
 ### External Sources
