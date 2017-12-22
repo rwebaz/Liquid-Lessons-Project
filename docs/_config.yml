@@ -1,10 +1,10 @@
 # Site settings
 #
-# Date of this Update to Config-template file ver 08-13-2017 PM
+# Date of this Update to Config-template file ver 12-18-2017
 #
 # github: [metadata]
 theme: "jekyll-theme-cayman"
-# repository: rwebaz/Liquid-Lessons-Project
+# repository: https://www.github.com/rwebaz/Liquid-Lessons-Project
 title: "Liquid Lessons Project"
 tagline: "A GitHub repo of Liquid lessons that emphasize both the Jekyll and Shopify engines"
 description: "A GitHub repo of Liquid lessons that emphasize both the Jekyll and Shopify engines"
@@ -36,14 +36,14 @@ defaults:
       image: "true"
 defaults:
   - scope:
-      path: "assets/ico"
+      path: "assets/img/png"
     values:
       image: "true"
 defaults:
   - scope:
-      path: ""
+      path: "assets/img/svg"
     values:
-      image: /assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-100-x-100.png
+      image: "true"
 defaults:
   - scope:
       path: "" 
