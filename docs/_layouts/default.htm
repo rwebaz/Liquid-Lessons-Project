@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Set the base language to English -->
 <html lang="en-us">
   {% include head.htm %}
 
@@ -7,7 +8,7 @@
       
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
 
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline">{{ site.tagline | default: site.github.project_tagline }}</h2>
 
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
@@ -23,15 +24,13 @@
     </section>
 
     <section class="main-content">
-      <!-- \{\% include page-banner.htm \%\} 
-        <hr class='green-groove' /> -->
+      <!-- \{\% include page-banner.htm \%\} -->
+      <!-- <hr class='green-groove' /> -->
       
       {{ content }}
 
       {% include icon-github.html %}
         
-      <!-- <hr class='green-groove' />
-       \{\% include footer.htm \%\} -->
     </section>
 
     {% if site.google_analytics %}
