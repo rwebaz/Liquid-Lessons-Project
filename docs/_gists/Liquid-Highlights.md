@@ -1,37 +1,29 @@
 ---
-title: Repo Users
+title:  Liquid Highlights
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
-# Repo Users
+# Liquid Highlights
 
-A List of Git Hub Users
+**Jekyll** offers powerful support for code snippets via the **Liquid** language.
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
-## Combo Snippet
+## Highlight Code
 
-This little combo snippet will render a list of GitHub users associated with your repo, as follows:
-
-### The Code
+More to come ...
 
 ```liquid
 {% raw %}
-<ul>
-{% for member in site.data.members %}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
-    </a>
-  </li>
-{% endfor %}
-</ul>
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
 {% endraw %}
 ```
-
-### Live
-
-**Por ejemplo en vivo**. Need `members` data file in _data to render ...
 
 {% include sources-and-uses.md %}
 

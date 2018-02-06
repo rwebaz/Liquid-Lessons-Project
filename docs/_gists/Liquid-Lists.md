@@ -1,13 +1,13 @@
 ---
 title:  Liquid Lists
 layout: default
-navigation_weight: 9 
+navigation_weight: 8
 ---
 # Liquid Lists
 
 {{ site.tagline }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Unordered Lists
 

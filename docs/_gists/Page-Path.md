@@ -1,17 +1,29 @@
 ---
-title: Case When
+title: Page Path
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
-# Case When
+# Page Path
 
-Place the introducing line of text ie.) the 'tagline' here ...
+Couple two *moustache* or **Liquid Variable Statements** ...
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
-## Subtitle
+## Site baseurl
 
-More to come ...
+One the `site.baseurl` and the other the `page.path` to illustrate the absolute path of a page, as follows:
+
+## The Code
+
+```liquid
+{% raw %}
+{{ site.baseurl }}{{ page.path }}
+{% endraw %}
+```
+
+### Live
+
+**Por ejemplo en vivo**. {{ site.baseurl }}{{ page.path }}
 
 {% include sources-and-uses.md %}
 

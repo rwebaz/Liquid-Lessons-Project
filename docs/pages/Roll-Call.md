@@ -1,13 +1,17 @@
 ---
 title: Roll Call
 layout: default
-navigation_weight: 9
+excerpt: How to render data from a Data Store in Jekyll ...
+navigation_weight: 8
+categories: data
 ---
 # Roll Call
 
-How to Render Data From a Data Store In Jekyll
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
+
+{% include toc.md %}
 
 ## Solution
 
@@ -281,10 +285,22 @@ If you do, here it is!
 {% endraw %}
 ```
 
+## Last Subtitle
+
+{{ site.description }}
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
 - [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H){:title="Click to Visit ..."}{:target="_blank"}

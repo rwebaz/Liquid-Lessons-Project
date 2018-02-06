@@ -1,13 +1,17 @@
 ---
 title: Relative Anchors
 layout: default
-navigation_weight: 9
+excerpt: How to craft an internal Anchor Link in Markdown with Liquid ...
+navigation_weight: 8
+categories: 
 ---
 # Relative Anchors
 
-How To Craft An Internal Hyperlink In Markdown With Liquid
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
+
+{% include toc.md %}
 
 ## Targeting SubTitles
 
@@ -39,10 +43,22 @@ Taking the code of our already completed *long-cut* external hyperlink from the 
 
 See: [Long Cut Links]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }}){:target="_blank"} ), we may now inject our **Liquid** moustache statement into the mix, as follows:
 
+## Last Subtitle
+
+{{ site.description }}
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
 - [How To Convert an Html Site To Jekyll](http://jekyllrb.com/tutorials/convert-site-to-jekyll/){:title="Click to Visit How To Convert an Html Site To Jekyll"}{:target="_blank"}. Published by © 2017 [Jekyllrb.com](http://jekyllrb.com){:title="Click to Visit Jekyllrb dot com"}{:target="_blank"}.

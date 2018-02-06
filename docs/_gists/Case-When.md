@@ -1,29 +1,17 @@
 ---
-title:  Liquid Highlights
+title: Case When
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
-# Liquid Highlights
+# Case When
 
-**Jekyll** offers powerful support for code snippets via the **Liquid** language.
+Place the introducing line of text ie.) the 'tagline' here ...
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
-## Highlight Code
+## Subtitle
 
 More to come ...
-
-```liquid
-{% raw %}
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-{% endraw %}
-```
 
 {% include sources-and-uses.md %}
 

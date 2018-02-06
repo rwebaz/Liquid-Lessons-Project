@@ -1,13 +1,13 @@
 ---
 title: Title Target
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
 # Title Target
 
 How To Force a New Target Blank When Clicking A GFM Hyperlink
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Solution
 
