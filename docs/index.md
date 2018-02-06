@@ -1,15 +1,18 @@
 ---
 title: Home Page
 layout: default
+excerpt: Liquid tags and Liquid statements mimic underlying Javascript methods ...
 navigation_weight: 1
 ---
 # Liquid Lessons Project Home Page
 
-{{ site.description }}
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% comment %}Markdown Index Template md Dtd 02-04-18{% endcomment %}
 
-## Issue Dtd 02-03-18
+{% include toc.md %}
+
+## Issue
 
 The **Issue** of a successful legal argument is prefaced by a concise, to the point coin flip.
 

@@ -1,14 +1,13 @@
 ---
 title: Liquid Raw
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
 # Liquid Raw
 
 Fence in all multi-line code references using a Liquid Raw tag.
 
-{% include toc-flammarion.md %}
-
+{% include toc.md %}
 
 {% include sources-and-uses.md %}
 

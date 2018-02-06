@@ -1,29 +1,37 @@
 ---
-title: Page Path
+title: Repo Users
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
-# Page Path
+# Repo Users
 
-Couple two *moustache* or **Liquid Variable Statements** ...
+A List of Git Hub Users
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
-## Site baseurl
+## Combo Snippet
 
-One the `site.baseurl` and the other the `page.path` to illustrate the absolute path of a page, as follows:
+This little combo snippet will render a list of GitHub users associated with your repo, as follows:
 
-## The Code
+### The Code
 
 ```liquid
 {% raw %}
-{{ site.baseurl }}{{ page.path }}
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
 {% endraw %}
 ```
 
 ### Live
 
-**Por ejemplo en vivo**. {{ site.baseurl }}{{ page.path }}
+**Por ejemplo en vivo**. Need `members` data file in _data to render ...
 
 {% include sources-and-uses.md %}
 

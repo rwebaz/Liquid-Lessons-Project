@@ -1,13 +1,13 @@
 ---
 title: Footer Types
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
 # Footer Types
 
 The footer for each page is split into two (2) classes.
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Page Footer
 

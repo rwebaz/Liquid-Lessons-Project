@@ -1,13 +1,21 @@
 ---
 title: Liquid Tips
 layout: default
-navigation_weight: 9
+excerpt: Place the introducing line of text ie.) the 'lead' here ...
+navigation_weight: 8
+categories: backtick
 ---
-# GFG
+# Liquid Tips
 
-GFM is an acronym for Git Hub Flavor'd Markdown
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
+
+{% include toc.md %}
+
+## GFG
+
+GitHub Flavored Markdown, or [GFM](https://){:title='GitHub Flavored Markdown'}{:target='_blank'} is a text formatting language long on brevity.
 
 ## Creating Headers
 
@@ -63,7 +71,7 @@ Next, the `link` tag is built within a separate liquid statement adjacent to and
 
 ```liquid
 {% raw %}
-{% link pages/Title-Target.md %}
+{% link _gists/Title-Target.md %}
 {% endraw %}
 ```
 
@@ -77,13 +85,13 @@ Putting the two liquid statements together "live" we have the following "live" r
 
 ```liquid
 {% raw %}
-[Target Blank]{{ site.baseurl }}{% link pages/Title-Target.md %}
+[Target Blank]{{ site.baseurl }}{% link _gists/Title-Target.md %}
 {% endraw %}
 ```
 
 ### Live E
 
-[Target Blank]{{ site.baseurl }}{% link pages/Title-Target.md %}
+[Target Blank]{{ site.baseurl }}{% link _gists/Title-Target.md %}
 
 ***
 
@@ -283,7 +291,7 @@ Inside the single set of parenthesis `(...)` is a double set of braces ie.) a *m
 {% endraw %}
 ```
 
-In this case ... the site base URL `site.baseurl` followed by another liquid `{\%...\%}` statement that houses the liquid `link` keyword plus a `space` followed by the relative `page` URL of the targeted page `pages/Title-Target.md`.
+In this case ... the site base URL `site.baseurl` followed by another liquid `{\%...\%}` statement that houses the liquid `link` keyword plus a `space` followed by the relative `page` URL of the targeted page `_gists/Title-Target.md`.
 
 Using a Triple-backtick highlighted code block with a language qualifier of liquid to illustrate ... all together now!
 
@@ -291,13 +299,13 @@ Using a Triple-backtick highlighted code block with a language qualifier of liqu
 
 ```liquid
 {% raw %}
-[Target Blank]({{ site.baseurl }}{% link pages/Title-Target.md %})
+[Target Blank]({{ site.baseurl }}{% link _gists/Title-Target.md %})
 {% endraw %}
 ```
 
 ### Live Q
 
-**Por ejemplo en vivo**. [Target Blank]({{ site.baseurl }}{% link pages/Title-Target.md %})
+**Por ejemplo en vivo**. [Target Blank]({{ site.baseurl }}{% link _gists/Title-Target.md %})
 
 ***
 
@@ -504,8 +512,20 @@ As more snippets are generated or found, expect this list to grow.
 
 **Rule**. All markdown pages carry the suffix (.md)
 
+## Last Subtitle
+
+{{ site.description }}
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.

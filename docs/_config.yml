@@ -1,7 +1,7 @@
 # Site settings
-#
-# Date of this Update to Config-template file ver 02-01-2018
-#
+# 
+# Date of this Update to Config-template file ver 02-04-2018 pm
+# 
 # Uncomment theme for docs folder
 theme: "jekyll-theme-cayman"
 #
@@ -62,16 +62,14 @@ defaults:
       path: "" 
       type: "pages"
     values:
-      layout: "default"
-      author: "Robert Weber, Director"
+      category: "liquid"
 defaults:
   - scope:
       path: "pages"
       type: "pages"
     values:
-      layout: "default" 
-      author: "Robert Weber, Director"
-excerpt_separator: <!-- this is an excerpt separator -->
+      category: "liquid" 
+excerpt_separator: <!-- this is a literal excerpt separator -->
 collections:
   gists:
     output: "true"
