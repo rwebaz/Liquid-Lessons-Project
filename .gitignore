@@ -1,5 +1,5 @@
 # 
-# Template Dtd 01-27-18
+# Template Dtd 01-31-18
 # 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 #
@@ -648,4 +648,4 @@ $
 *.dotCover
 #
 .metadata
-#
+# 
