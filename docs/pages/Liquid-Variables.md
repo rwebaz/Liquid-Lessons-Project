@@ -2,15 +2,19 @@
 title: Liquid Variables
 layout: default
 excerpt: Variables in Liquid are declared at the Yaml front matter section of the page ...
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Liquid-Lessons-Project
+ver_date: 11-20-19
 navigation_weight: 8
-version: Markdown Page Template md Dtd 02-05-18 am
-categories: frontmatter
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
+
+## First Subtitle
+
+> **Hint**. {{ page.hint }}
+
+More to come ...
 
 ## Importing Variables
 
@@ -105,24 +109,16 @@ Because I am enveloped within a set of {% raw - endraw %} liquid tags.}
 
 Hence, when rendering a *complex* **Liquid Comment** statement in Jekyll, wrap your set of `comment - endcomment` Liquid tags inside a set of `raw - endraw` Liquid tags, too.
 
-## Import Code
+## Last Subtitle
 
 More to come ...
 
-## Last Subtitle
+***
 
-Place the introducing line of text ie.) the 'tagline' here ...
+**Note**. The above synopsis was derived from an article written by Blank Author [[1](#BLANKAUTHOR){:.red}].
 
-### Raw Code Block
+1. {:#BLANKAUTHOR}[A Narrative of Psychology by Blank Author, Jan #1999](http://cowles.yale.edu/sites/default/files/files/pub/d20/d2069.pdf){:target="_blank"}
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+***
 
-{% include sources-and-uses.md %}
-
-### External Sources
-
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+{% include patreon-link.md %}

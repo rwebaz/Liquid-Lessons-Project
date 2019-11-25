@@ -2,16 +2,19 @@
 title: Roll Call
 layout: default
 excerpt: How to render data from a Data Store in Jekyll ...
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Liquid-Lessons-Project
+ver_date: 11-20-19
 navigation_weight: 8
-categories: data
+categories: page
 ---
-# Roll Call
-
-{{ page.excerpt }}
-
-{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
-
 {% include toc.md %}
+
+## First Subtitle
+
+> **Hint**. {{ page.hint }}
+
+More to come ...
 
 ## Solution
 
@@ -287,20 +290,14 @@ If you do, here it is!
 
 ## Last Subtitle
 
-{{ site.description }}
+More to come ...
 
-### Raw Code Block
+***
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+**Note**. The above synopsis was derived from an article written by the Arizona House of Representatives [[1](#AZHOUSE){:.red}].
 
-{% include sources-and-uses.md %}
+1. {:#AZHOUSE}[Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H){:title="Click to Visit the Arizona House of Representatives"}{:target="_blank"}
 
-### External Sources
+***
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
-
-- [Arizona House of Representatives](http://www.azleg.gov/MemberRoster/?body=H){:title="Click to Visit ..."}{:target="_blank"}
+{% include patreon-link.md %}
