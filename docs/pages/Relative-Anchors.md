@@ -2,16 +2,19 @@
 title: Relative Anchors
 layout: default
 excerpt: How to craft an internal Anchor Link in Markdown with Liquid ...
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Liquid-Lessons-Project
+ver_date: 11-20-19
 navigation_weight: 8
-categories: 
+categories: page
 ---
-# Relative Anchors
-
-{{ page.excerpt }}
-
-{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
-
 {% include toc.md %}
+
+## First Subtitle
+
+> **Hint**. {{ page.hint }}
+
+More to come ...
 
 ## Targeting SubTitles
 
@@ -45,20 +48,14 @@ See: [Long Cut Links]({{ "/pages/Craft-A-Link#Long Cut Links" | relative_url }})
 
 ## Last Subtitle
 
-{{ site.description }}
+More to come ...
 
-### Raw Code Block
+***
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+**Note**. The above synopsis was derived from an article written by Jekyll RB [[1](#JEKYLLRB){:.red}].
 
-{% include sources-and-uses.md %}
+1. {:#JEKYLLRB}[How To Convert an Html Site To Jekyll](http://jekyllrb.com/tutorials/convert-site-to-jekyll/){:title="Click to Visit How To Convert an Html Site To Jekyll"}{:target="_blank"}. Published by © 2017 [Jekyllrb.com](http://jekyllrb.com){:title="Click to Visit Jekyllrb dot com"}{:target="_blank"}.
 
-### External Sources
+***
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
-
-- [How To Convert an Html Site To Jekyll](http://jekyllrb.com/tutorials/convert-site-to-jekyll/){:title="Click to Visit How To Convert an Html Site To Jekyll"}{:target="_blank"}. Published by © 2017 [Jekyllrb.com](http://jekyllrb.com){:title="Click to Visit Jekyllrb dot com"}{:target="_blank"}.
+{% include patreon-link.md %}

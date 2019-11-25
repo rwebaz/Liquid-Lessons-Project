@@ -2,16 +2,19 @@
 title: Liquid Tips
 layout: default
 excerpt: Place the introducing line of text ie.) the 'lead' here ...
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Liquid-Lessons-Project
+ver_date: 11-20-19
 navigation_weight: 8
-categories: backtick
+categories: page
 ---
-# Liquid Tips
-
-{{ page.excerpt }}
-
-{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
-
 {% include toc.md %}
+
+## First Subtitle
+
+> **Hint**. {{ page.hint }}
+
+More to come ...
 
 ## GFG
 
@@ -415,13 +418,13 @@ Inline images may be displayed using the exclamation point `!` followed by a bra
 
 ```liquid
 {% raw %}
-![Logo Badge](../assets/ico/ms-icon-70x70.png)
+![Logo Badge](../assets/img/ico/ms-icon-70x70.png)
 {% endraw %}
 ```
 
 ### Live U
 
-**Por ejemplo en vivo**. ![Logo Badge](../assets/ico/ms-icon-70x70.png)
+**Por ejemplo en vivo**. ![Logo Badge](../assets/img/ico/ms-icon-70x70.png)
 
 ***
 
@@ -514,18 +517,14 @@ As more snippets are generated or found, expect this list to grow.
 
 ## Last Subtitle
 
-{{ site.description }}
+More to come ...
 
-### Raw Code Block
+***
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+**Note**. The above synopsis was derived from an article written by Blank Author [[1](#BLANKAUTHOR){:.red}].
 
-{% include sources-and-uses.md %}
+1. {:#BLANKAUTHOR}[A Narrative of Psychology by Blank Author, Jan #1999](http://cowles.yale.edu/sites/default/files/files/pub/d20/d2069.pdf){:target="_blank"}
 
-### External Sources
+***
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+{% include patreon-link.md %}

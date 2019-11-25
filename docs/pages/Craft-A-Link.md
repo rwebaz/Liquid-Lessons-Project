@@ -2,16 +2,19 @@
 title: Craft A Link
 layout: default
 excerpt: How To Craft An External Hyperlink In Markdown With Liquid
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Liquid-Lessons-Project
+ver_date: 11-20-19
 navigation_weight: 8
-categories: hyperlink
+categories: page
 ---
-# Craft A Link
-
-{{ page.excerpt }}
-
-{% comment %}Markdown Page Template md Dtd 02-04-18{% endcomment %}
-
 {% include toc.md %}
+
+## First Subtitle
+
+> **Hint**. {{ page.hint }}
+
+More to come ...
 
 ## External Hyperlinks
 
@@ -271,18 +274,14 @@ The **Status Bar** will show each link as compiled, when hovered over.
 
 ## Last Subtitle
 
-{{ site.description }}
+More to come ...
 
-### Raw Code Block
+***
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+**Note**. The above synopsis was derived from an article written by Blank Author [[1](#BLANKAUTHOR){:.red}].
 
-{% include sources-and-uses.md %}
+1. {:#BLANKAUTHOR}[A Narrative of Psychology by Blank Author, Jan #1999](http://cowles.yale.edu/sites/default/files/files/pub/d20/d2069.pdf){:target="_blank"}
 
-### External Sources
+***
 
-- The [Project Source Links](https://mminail.github.io/Liquid/Source-Liquid-Links.htm){:title="Click to Visit the Source Links page of the Liquid Lessons Project at GitHub pages"}{:target="_blank"} page of the Liquid Lessons Project. Published by © 2017 -2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+{% include patreon-link.md %}
